@@ -4,10 +4,7 @@ public class LikesInfo {
 
     private int count;
     private boolean isUserLikes;
-    private boolean isNotUserLikes;
     private boolean isCanLike;
-    private boolean isNotCanLike;
-
 
     public int getCount() {
         return count;
@@ -25,14 +22,6 @@ public class LikesInfo {
         isUserLikes = userLikes;
     }
 
-    public boolean isNotUserLikes() {
-        return isNotUserLikes;
-    }
-
-    public void setNotUserLikes(boolean notUserLikes) {
-        isNotUserLikes = notUserLikes;
-    }
-
     public boolean isCanLike() {
         return isCanLike;
     }
@@ -41,13 +30,7 @@ public class LikesInfo {
         isCanLike = canLike;
     }
 
-    public boolean isNotCanLike() {
-        return isNotCanLike;
-    }
 
-    public void setNotCanLike(boolean notCanLike) {
-        isNotCanLike = notCanLike;
-    }
 }
 
 

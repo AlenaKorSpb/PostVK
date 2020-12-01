@@ -8,13 +8,13 @@ public class Post {
     private int date;
     private int close;
     private String urlImg;
-    private int commentsInfo;
-    private int likesInfo;
-    private int repostInfo;
+    private CommentsInfo commentsInfo;
+    private LikesInfo likesInfo;
+    private RepostInfo repostInfo;
     private int countViews;
-    private int geoInfo;
-    private int interestsInfo;
-    private int isPinned;
+    private String geoInfo;
+    private boolean interestsInfo;
+    private boolean isPinned;
     private int markedAsAds;
     private String copyright;
     private int ownerId;
@@ -26,9 +26,9 @@ public class Post {
     private String postType;
     private int signerId;
     private boolean isFavorite;
-    private int postSource;
-    private int donut;
-    private int postponedId;
+    private PostSourceInfo postSourceInfo;
+    private DonutInfo donutInfo;
+    private String postponedId;
 
 
 
@@ -80,27 +80,27 @@ public class Post {
         this.urlImg = urlImg;
     }
 
-    public int getCommentsInfo() {
+    public CommentsInfo getCommentsInfo() {
         return commentsInfo;
     }
 
-    public void setCommentsInfo(int commentsInfo) {
+    public void setCommentsInfo(CommentsInfo commentsInfo) {
         this.commentsInfo = commentsInfo;
     }
 
-    public int getLikesInfo() {
+    public LikesInfo getLikesInfo() {
         return likesInfo;
     }
 
-    public void setLikesInfo(int likesInfo) {
-        this.likesInfo = likesInfo;
+    public void setLikesInfo(LikesInfo likesInfo) {
+       this.likesInfo = likesInfo;
     }
 
-    public int getRepostInfo() {
+    public RepostInfo getRepostInfo() {
         return repostInfo;
     }
 
-    public void setRepostInfo(int repostInfo) {
+    public void setRepostInfo(RepostInfo repostInfo) {
         this.repostInfo = repostInfo;
     }
 
@@ -112,27 +112,27 @@ public class Post {
         this.countViews = countViews;
     }
 
-    public int getGeoInfo() {
+    public String getGeoInfo() {
         return geoInfo;
     }
 
-    public void setGeoInfo(int geoInfo) {
+    public void setGeoInfo(String geoInfo) {
         this.geoInfo = geoInfo;
     }
 
-    public int getInterestsInfo() {
+    public boolean getInterestsInfo() {
         return interestsInfo;
     }
 
-    public void setInterestsInfo(int interectsInfo) {
+    public void setInterestsInfo(boolean interectsInfo) {
         this.interestsInfo = interectsInfo;
     }
 
-    public int getIsPinned() {
+    public boolean getIsPinned() {
         return isPinned;
     }
 
-    public void setIsPinned(int isPinned) {
+    public void setIsPinned(boolean isPinned) {
         this.isPinned = isPinned;
     }
 
@@ -224,29 +224,30 @@ public class Post {
         isFavorite = favorite;
     }
 
-    public int getPostSource() {
-        return postSource;
+    public PostSourceInfo getPostSourceInfo() {
+        return postSourceInfo;
     }
 
-    public void setPostSource(int postSource) {
-        this.postSource = postSource;
+    public void setPostSourceInfo(PostSourceInfo postSourceInfo) {
+        this.postSourceInfo = postSourceInfo;
     }
 
-    public int getDonut() {
-        return donut;
+    public DonutInfo getDonutInfo() {
+        return donutInfo;
     }
 
-    public void setDonut(int donut) {
-        this.donut = donut;
+    public void setDonutInfo(DonutInfo donut) {
+        this.donutInfo = donut;
     }
 
-    public int getPostponedId() {
+    public String getPostponedId() {
         return postponedId;
     }
 
-    public void setPostponedId(int postponedId) {
+    public void setPostponedId(String postponedId) {
         this.postponedId = postponedId;
     }
+
 }
 
 
